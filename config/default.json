@@ -1,3 +1,4 @@
 {
-    "mongoURI": "mongodb+srv://utka707:utshwd90@cluster0.hioai.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongoURI": "mongodb+srv://utka707:utshwd90@cluster0.hioai.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "ewgiGdmhhNmyTveZWwEKMLVs5WCbQgKQgQk23jkEji8CPnuABeZU3BtaBHO6u0K"
 }
