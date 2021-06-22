@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const { addListener } = require('./Profile');
-const Schema = mogoose.Schema;
+const Schema = mongoose.Schema;
 
 const PostSchema = new Schema({
   user: {
