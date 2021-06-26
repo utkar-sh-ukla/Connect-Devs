@@ -1,7 +1,7 @@
 {
-  "mongoURI": "mongodb+srv://utka707:utshwd90@cluster0.hioai.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
-  "jwtSecret": "ewgiGdmhhNmyTveZWwEKMLVs5WCbQgKQgQk23jkEji8CPnuABeZU3BtaBHO6u0K",
-  "githubClientId": "588a1152ba3a9052eb88",
-  "githubSecret": "2c79b354116c5699ece4b2048cd56c87c7190f1a"
+    "mongoURI": "mongodb+srv://utka707:utshwd90@cluster0.hioai.mongodb.net/myFirstDatabase?retryWrites=true&w=majority",
+    "jwtSecret": "ewgiGdmhhNmyTveZWwEKMLVs5WCbQgKQgQk23jkEji8CPnuABeZU3BtaBHO6u0K",
+    "githubClientId": "588a1152ba3a9052eb88",
+    "githubSecret": "2c79b354116c5699ece4b2048cd56c87c7190f1a"
 
 }

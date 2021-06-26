@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Landing = () => {
+export const Landing = () => {
   return (
     <section className='landing'>
       <div className='dark-overlay'>
@@ -24,5 +24,3 @@ const Landing = () => {
     </section>
   );
 };
-
-export default Landing;
