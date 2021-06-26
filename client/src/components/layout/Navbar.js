@@ -1,17 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav className='navbar bg-dark'>
       <h1>
         <Link to='/'>
-          <i className='fas fa-code'></i> DevConnector
+          <i className='fas fa-code' /> DevConnector
         </Link>
       </h1>
       <ul>
         <li>
-          <Link to='#'>Developers</Link>
+          <a href='!#'>Developers</a>
         </li>
         <li>
           <Link to='/register'>Register</Link>
@@ -23,3 +23,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
