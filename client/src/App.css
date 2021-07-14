@@ -1,10 +1,11 @@
 /* Global Styles */
 :root {
-  --primary-color: #17a2b8;
-  --dark-color: #343a40;
+  --primary-color: #009ffd;
+  --dark-color: linear-gradient(147deg, #000000 0%, #434343 74%);
   --light-color: #f4f4f4;
-  --danger-color: #dc3545;
-  --success-color: #28a745;
+  --danger-color: linear-gradient(147deg, #990000 0%, #ff0000 74%);
+  --success-color: linear-gradient(315deg, #00b712 0%, #5aff15 74%);
+  --violet-color: linear-gradient(315deg, #045de9 0%, #09c6f9 74%);
 }
 
 * {
@@ -14,7 +15,7 @@
 }
 
 body {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 1rem;
   line-height: 1.6;
   background-color: #fff;
@@ -36,7 +37,7 @@ img {
 
 /* Utilities */
 .container {
-  max-width: 1100px;
+  max-width: 800px;
   margin: auto;
   overflow: hidden;
   padding: 0 2rem;
@@ -160,7 +161,7 @@ img {
 .bg-primary,
 .badge-primary,
 .alert-primary {
-  background: var(--primary-color);
+  background: var(--violet-color);
   color: #fff;
 }
 
@@ -308,7 +309,7 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--primary-color);
+  border-bottom: solid 1px var(--violet-color);
   opacity: 0.9;
 }
 
@@ -390,7 +391,7 @@ button {
 }
 
 .profile-top .icons a:hover {
-  color: var(--dark-color);
+  color: var(--primary-color);
 }
 
 .profile-about {
