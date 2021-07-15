@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from 'react';
-import { withRouter } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { addEducation } from '../../actions/profile';
+import React, { Fragment, useState } from 'react'
+import { withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { addEducation } from '../../actions/profile'
 
 const AddEducation = ({ addEducation, history }) => {
   const [formData, setFormData] = useState({
@@ -13,29 +13,29 @@ const AddEducation = ({ addEducation, history }) => {
     to: '',
     current: false,
     description: '',
-  });
+  })
 
-  const [toDateDisabled, toggleDisabled] = useState(false);
+  const [toDateDisabled, toggleDisabled] = useState(false)
 
   const { school, degree, fieldofstudy, from, to, current, description } =
-    formData;
+    formData
 
   const onChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value })
 
   return (
     <Fragment>
       <h1 className='large text-primary'>Add Your Education</h1>
       <p className='lead'>
-        <i className='fas fa-code-branch' /> Add any school or bootcamp that you
+        <i className='fas fa-university' /> Add any school or bootcamp that you
         have attended
       </p>
       <small>* = required field</small>
       <form
         className='form'
         onSubmit={(e) => {
-          e.preventDefault();
-          addEducation(formData, history);
+          e.preventDefault()
+          addEducation(formData, history)
         }}
       >
         <div className='form-group'>
@@ -84,8 +84,8 @@ const AddEducation = ({ addEducation, history }) => {
               checked={current}
               value={current}
               onChange={(e) => {
-                setFormData({ ...formData, current: !current });
-                toggleDisabled(!toDateDisabled);
+                setFormData({ ...formData, current: !current })
+                toggleDisabled(!toDateDisabled)
               }}
             />{' '}
             Current School
@@ -117,11 +117,11 @@ const AddEducation = ({ addEducation, history }) => {
         </a>
       </form>
     </Fragment>
-  );
-};
+  )
+}
 
 AddEducation.propTypes = {
   addEducation: PropTypes.func.isRequired,
-};
+}
 
-export default connect(null, { addEducation })(withRouter(AddEducation));
+export default connect(null, { addEducation })(withRouter(AddEducation))
