@@ -34,7 +34,7 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-primary text-center'>Sign Up</h1>
+        <h1 className='large text-light text-center'>Sign Up</h1>
         <div className='formbg'>
           <p className='lead text-center pd-top-30'>
             <i className='fas fa-user' /> Create Your Account

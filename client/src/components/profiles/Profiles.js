@@ -16,7 +16,7 @@ const Profiles = ({ getProfiles, profile: { profiles, loading } }) => {
       ) : (
         <Fragment>
           <section className='container'>
-            <h1 className='large text-primary'>Developers</h1>
+            <h1 className='large text-light'>Developers</h1>
             <p className='lead'>
               <i className='fab fa-firefox'></i> Browse and connect with
               Developers

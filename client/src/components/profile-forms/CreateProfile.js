@@ -1,8 +1,8 @@
-import React, { Fragment, useState } from 'react';
-import { Link, withRouter } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { createProfile } from '../../actions/profile';
+import React, { Fragment, useState } from 'react'
+import { Link, withRouter } from 'react-router-dom'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import { createProfile } from '../../actions/profile'
 
 const CreateProfile = ({ createProfile, history }) => {
   const [formData, setFormData] = useState({
@@ -18,9 +18,9 @@ const CreateProfile = ({ createProfile, history }) => {
     linkedin: '',
     youtube: '',
     instagram: '',
-  });
+  })
 
-  const [displaySocialInputs, toggleSocialInputs] = useState(false);
+  const [displaySocialInputs, toggleSocialInputs] = useState(false)
 
   const {
     company,
@@ -35,19 +35,19 @@ const CreateProfile = ({ createProfile, history }) => {
     linkedin,
     youtube,
     instagram,
-  } = formData;
+  } = formData
 
   const onChange = (e) =>
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    setFormData({ ...formData, [e.target.name]: e.target.value })
 
   const onSubmit = (e) => {
-    e.preventDefault();
-    createProfile(formData, history);
-  };
+    e.preventDefault()
+    createProfile(formData, history)
+  }
 
   return (
     <Fragment>
-      <h1 className='large text-primary'>Create Your Profile</h1>
+      <h1 className='large text-light'>Create Your Profile</h1>
       <p className='lead'>
         <i className='fas fa-user' /> Let's get some information to make your
         profile stand out
@@ -217,11 +217,11 @@ const CreateProfile = ({ createProfile, history }) => {
         </Link>
       </form>
     </Fragment>
-  );
-};
+  )
+}
 
 CreateProfile.propTypes = {
   createProfile: PropTypes.func.isRequired,
-};
+}
 
-export default connect(null, { createProfile })(withRouter(CreateProfile));
+export default connect(null, { createProfile })(withRouter(CreateProfile))

@@ -3,6 +3,7 @@ import { withRouter } from 'react-router-dom'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
 import { addEducation } from '../../actions/profile'
+import { Link } from 'react-router-dom'
 
 const AddEducation = ({ addEducation, history }) => {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ const AddEducation = ({ addEducation, history }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-primary'>Add Your Education</h1>
+        <h1 className='large text-light'>Add Your Education</h1>
         <p className='lead'>
           <i className='fas fa-university' /> Add any school or bootcamp that
           you have attended
@@ -113,9 +114,9 @@ const AddEducation = ({ addEducation, history }) => {
             />
           </div>
           <input type='submit' className='btn btn-primary my-1' />
-          <a className='btn btn-light my-1' href='dashboard.html'>
+          <Link className='btn btn-light my-1' to='/dashboard'>
             Go Back
-          </a>
+          </Link>
         </form>
       </section>
     </Fragment>
