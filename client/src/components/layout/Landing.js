@@ -9,9 +9,9 @@ const Landing = ({ isAuthenticated }) => {
   }
 
   return (
-    <section className='landing'>
-      <div className='dark-overlay'>
-        <div className='landing-inner'>
+    <div className='landing'>
+      <div className='dark-overlay landing-inner'>
+        <div className='land'>
           <h1 className='x-large text-focus-in'>Connect with Developers</h1>
           <p className='lead'>
             Create a developer profile/portfolio, share posts and get help from
@@ -27,7 +27,7 @@ const Landing = ({ isAuthenticated }) => {
           </div>
         </div>
       </div>
-    </section>
+    </div>
   )
 }
 

@@ -21,6 +21,7 @@ import store from './store'
 import { loadUser } from './actions/auth'
 import setAuthToken from './utils/setAuthToken'
 
+import example from './components/layout/LottieAnimation'
 import './App.css'
 
 if (localStorage.token) {
@@ -37,7 +38,7 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <Route exact path='/' component={Landing} />
+          <Route exact path='/' component={example} />
           {/* <section className='container'> */}
           <Alert />
           <Switch>
