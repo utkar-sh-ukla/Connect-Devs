@@ -345,7 +345,7 @@ button {
   z-index: 1;
   width: 100%;
   top: 0;
-  border-bottom: solid 1px var(--violet-color);
+  border-bottom: 1px solid var(--violet-color);
   opacity: 0.9;
 }
 
@@ -370,7 +370,8 @@ button {
 /* Landing Page */
 .landing {
   position: relative;
-  background: url('./img/showcase.jpg') no-repeat center center/cover;
+  background: url('./img/showcase.jpg') no-repeat center center fixed;
+  background-size: cover;
   height: 100vh;
 }
 
@@ -794,4 +795,44 @@ button {
 
 .fb-btn {
   color: #2d609b;
+}
+
+/*back to the top*/
+.arrow {
+  background: #222;
+  text-align: center;
+  font-size: 180%;
+  margin: 2em;
+  font-family: Calibri, arial, sans-serif;
+}
+.to-top {
+  color: white;
+  padding-top: 1.8em;
+  display: inline-block; /* or block */
+  position: relative;
+  border-color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.to-top:before {
+  content: '▲';
+  font-size: 0.9em;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -0.7em;
+  border: solid 0.13em white;
+  border-radius: 10em;
+  width: 1.4em;
+  height: 1.4em;
+  line-height: 1.3em;
+  border-color: inherit;
+  transition: transform 0.5s ease-in;
+}
+.to-top:hover {
+  color: pink;
+  border-color: pink;
+}
+.to-top:hover:before {
+  transform: rotate(360deg);
 }

@@ -33,66 +33,68 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary text-center'>Sign Up</h1>
-      <div className='formbg'>
-        <p className='lead text-center pd-top-30'>
-          <i className='fas fa-user' /> Create Your Account
-        </p>
-        <form className='form' onSubmit={(e) => onSubmit(e)}>
-          <div className='form-group'>
+      <section className='container'>
+        <h1 className='large text-primary text-center'>Sign Up</h1>
+        <div className='formbg'>
+          <p className='lead text-center pd-top-30'>
+            <i className='fas fa-user' /> Create Your Account
+          </p>
+          <form className='form' onSubmit={(e) => onSubmit(e)}>
+            <div className='form-group'>
+              <input
+                type='text'
+                placeholder='Name'
+                name='name'
+                className='mg-left-35'
+                value={name}
+                onChange={(e) => onChange(e)}
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='email'
+                placeholder='Email Address'
+                name='email'
+                className='mg-left-35'
+                value={email}
+                onChange={(e) => onChange(e)}
+              />
+              <small className='form-text mg-left-40'>
+                This site uses Gravatar so if you want a profile image, use a
+                Gravatar email
+              </small>
+            </div>
+            <div className='form-group'>
+              <input
+                type='password'
+                placeholder='Password'
+                name='password'
+                className='mg-left-35'
+                value={password}
+                onChange={(e) => onChange(e)}
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='password'
+                placeholder='Confirm Password'
+                name='password2'
+                className='mg-left-35'
+                value={password2}
+                onChange={(e) => onChange(e)}
+              />
+            </div>
             <input
-              type='text'
-              placeholder='Name'
-              name='name'
-              className='mg-left-35'
-              value={name}
-              onChange={(e) => onChange(e)}
+              type='submit'
+              className='btn btn-primary mg-left-35 width'
+              value='Register'
             />
-          </div>
-          <div className='form-group'>
-            <input
-              type='email'
-              placeholder='Email Address'
-              name='email'
-              className='mg-left-35'
-              value={email}
-              onChange={(e) => onChange(e)}
-            />
-            <small className='form-text mg-left-40'>
-              This site uses Gravatar so if you want a profile image, use a
-              Gravatar email
-            </small>
-          </div>
-          <div className='form-group'>
-            <input
-              type='password'
-              placeholder='Password'
-              name='password'
-              className='mg-left-35'
-              value={password}
-              onChange={(e) => onChange(e)}
-            />
-          </div>
-          <div className='form-group'>
-            <input
-              type='password'
-              placeholder='Confirm Password'
-              name='password2'
-              className='mg-left-35'
-              value={password2}
-              onChange={(e) => onChange(e)}
-            />
-          </div>
-          <input
-            type='submit'
-            className='btn btn-primary mg-left-35 width'
-            value='Register'
-          />
-        </form>
-        <p className='my-1 mg-left-100 pd-bottom-30'>
-          Already have an account? <Link to='/login'>Sign In</Link>
-        </p>
-      </div>
+          </form>
+          <p className='my-1 mg-left-100 pd-bottom-30'>
+            Already have an account? <Link to='/login'>Sign In</Link>
+          </p>
+        </div>
+      </section>
     </Fragment>
   )
 }

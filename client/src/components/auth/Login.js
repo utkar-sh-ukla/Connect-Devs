@@ -26,44 +26,46 @@ const Login = ({ login, isAuthenticated }) => {
 
   return (
     <Fragment>
-      <h1 className='large text-primary text-center'>Sign In</h1>
-      <div className='formbg'>
-        <p className='lead text-center pd-top-30'>
-          <i className='fas fa-user' /> Sign Into Your Account
-        </p>
-        <form className='form' onSubmit={(e) => onSubmit(e)}>
-          <div className='form-group'>
+      <section className='container'>
+        <h1 className='large text-primary text-center'>Sign In</h1>
+        <div className='formbg'>
+          <p className='lead text-center pd-top-30'>
+            <i className='fas fa-user' /> Sign Into Your Account
+          </p>
+          <form className='form' onSubmit={(e) => onSubmit(e)}>
+            <div className='form-group'>
+              <input
+                type='email'
+                placeholder='Email Address'
+                name='email'
+                className='mg-left-35'
+                value={email}
+                onChange={(e) => onChange(e)}
+                required
+              />
+            </div>
+            <div className='form-group'>
+              <input
+                type='password'
+                placeholder='Password'
+                name='password'
+                className='mg-left-35'
+                value={password}
+                onChange={(e) => onChange(e)}
+                minLength='6'
+              />
+            </div>
             <input
-              type='email'
-              placeholder='Email Address'
-              name='email'
-              className='mg-left-35'
-              value={email}
-              onChange={(e) => onChange(e)}
-              required
+              type='submit'
+              className='btn btn-primary mg-left-35 width'
+              value='Login'
             />
-          </div>
-          <div className='form-group'>
-            <input
-              type='password'
-              placeholder='Password'
-              name='password'
-              className='mg-left-35'
-              value={password}
-              onChange={(e) => onChange(e)}
-              minLength='6'
-            />
-          </div>
-          <input
-            type='submit'
-            className='btn btn-primary mg-left-35 width'
-            value='Login'
-          />
-        </form>
-        <p className='my-1 mg-left-100 pd-bottom-30'>
-          Don't have an account? <Link to='/register'>Sign Up</Link>
-        </p>
-      </div>
+          </form>
+          <p className='my-1 mg-left-100 pd-bottom-30'>
+            Don't have an account? <Link to='/register'>Sign Up</Link>
+          </p>
+        </div>
+      </section>
     </Fragment>
   )
 }
