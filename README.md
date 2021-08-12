@@ -1,6 +1,9 @@
 # Connect Devs
 
-Its a social platform for Developers.
-Here you can connect with other developers of your interests & can also get their help if you need.
+A social meadia platform for developers to share there knowledge and get helps from other developers.
 
-link: https://morning-hollows-92460.herokuapp.com/
+Technologies used : ReactJs | ExpressJs | NodeJs | MongoDB | Github API
+
+Deployed Link: https://morning-hollows-92460.herokuapp.com/
+
+
