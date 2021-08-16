@@ -34,14 +34,14 @@ const Profile = ({
               auth.loading === false &&
               auth.user._id === profile.user._id && (
                 <Link to='/edit-profile' className='btn btn-dark'>
-                  Edit Profile
+                  <i class='fas fa-user-edit'></i> Edit Profile
                 </Link>
               )}
-            <div class='profile-grid my-1'>
+            <div class='profile-grid mg-1'>
               <ProfileTop profile={profile} />
               <ProfileAbout profile={profile} />
-              <div className='profile-exp bg-white p-2'>
-                <h2 className='text-primary'>Experience</h2>
+              <div className='profile-exp bg-white pd-2'>
+                <h2 className='text-theme'>Experience</h2>
                 {profile.experience.length > 0 ? (
                   <Fragment>
                     {profile.experience.map((experience) => (
@@ -55,8 +55,8 @@ const Profile = ({
                   <h4>No experience credentials</h4>
                 )}
               </div>
-              <div className='profile-edu bg-white p-2'>
-                <h2 className='text-primary'>Education</h2>
+              <div className='profile-edu bg-white pd-2'>
+                <h2 className='text-theme'>Education</h2>
                 {profile.education.length > 0 ? (
                   <Fragment>
                     {profile.education.map((education) => (
