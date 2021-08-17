@@ -12,9 +12,6 @@ export default function LottieAnimation({ lotti, width, height }) {
   }
 
   return (
-    // <section className=''>
-    // {' '}
     <Lottie options={defaultOptions} height={height} width={width} />
-    // </section>
   )
 }

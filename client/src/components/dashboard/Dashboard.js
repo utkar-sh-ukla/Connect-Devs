@@ -24,7 +24,7 @@ const Dashboard = ({
   ) : (
     <Fragment>
       <section className='dashboard_container'>
-        <h1 className='large text-theme'>Dashboard</h1>
+        <h1 className='xx-large text-theme mg-1'>Dashboard</h1>
         <p className='lead ff-Work-Sans'>
           <img src={welcome} className='welcome' /> Welcome {user && user.name}
         </p>

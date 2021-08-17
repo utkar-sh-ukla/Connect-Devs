@@ -27,7 +27,7 @@ const Login = ({ login, isAuthenticated }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-theme text-center'>Sign In</h1>
+        <h1 className='xx-large text-theme text-center'>Sign In</h1>
         <div className='formbg'>
           <p className='lead text-center pd-top-30 ff-Work-Sans'>
             <i className='fas fa-user' /> Sign Into Your Account

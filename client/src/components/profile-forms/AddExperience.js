@@ -26,7 +26,7 @@ const AddExperience = ({ addExperience, history }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-theme text-center'>
+        <h1 className='large text-theme text-center mg-1'>
           <i class='fas fa-business-time'></i>&nbsp; Add An Experience
         </h1>
         <div className='form-box'>
@@ -115,10 +115,10 @@ const AddExperience = ({ addExperience, history }) => {
                 onChange={(e) => onChange(e)}
               />
             </div>
-            <input type='submit' className='btn btn-success mg-1' />
             <Link className='btn btn-light mg-1' to='/dashboard'>
-              Go Back
+              <i class='fas fa-arrow-left'></i> Go Back
             </Link>
+            <input type='submit' className='btn btn-success mg-1' />
           </form>
         </div>
       </section>

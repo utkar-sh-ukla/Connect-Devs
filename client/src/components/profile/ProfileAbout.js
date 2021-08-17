@@ -17,7 +17,7 @@ const ProfileAbout = ({
       </Fragment>
     )}
     <h2 class='text-theme'>Skill Set</h2>
-    <div class='text-theme ff-Playfair-Display'>
+    <div class='text-theme ff-Playfair-Display row-align'>
       {skills.map((skill, index) => (
         <div key={index} className='pd-1'>
           <i class='fas fa-star-half'></i> {skill}

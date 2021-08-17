@@ -20,7 +20,7 @@ const ProfileTop = ({
   return (
     <div class='profile-top  pd-2'>
       <img class='profile-top-img round-img mg-1' src={avatar} alt='' />
-      <h1 class='large'>{name}</h1>
+      <h1 class='xx-large'>{name}</h1>
       <p class='lead ff-Work-Sans'>
         {status} {company && <span> at {company}</span>}
       </p>

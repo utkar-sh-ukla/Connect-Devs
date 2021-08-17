@@ -22,7 +22,9 @@ const Post = ({ getPost, post: { post, loading }, match }) => {
           <i class='fas fa-arrow-left'></i> Back To Posts
         </Link>
         <PostItem post={post} showActions={false} />
+        <div class='line' />
         <CommentForm postId={post._id} />
+        <div class='line' />
         <div className='comments'>
           {post.comments.map((comment) => (
             <CommentItem

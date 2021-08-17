@@ -78,7 +78,7 @@ const EditProfile = ({
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-theme text-center'>
+        <h1 className='large text-theme text-center mg-1'>
           <i className='fas fa-user-circle' /> Create Your Profile
         </h1>
         <div className='form-box'>
@@ -251,10 +251,10 @@ const EditProfile = ({
               </Fragment>
             )}
 
-            <input type='submit' className='btn btn-success mg-1' />
             <Link className='btn btn-light mg-1' to='/dashboard'>
-              Go Back
+              <i class='fas fa-arrow-left'></i> Go Back
             </Link>
+            <input type='submit' className='btn btn-success mg-1' />
           </form>
         </div>
       </section>

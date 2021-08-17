@@ -27,7 +27,7 @@ const AddEducation = ({ addEducation, history }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-theme text-center'>
+        <h1 className='large text-theme text-center mg-1'>
           {' '}
           <i className='fas fa-university' /> Add Your Education
         </h1>
@@ -116,10 +116,10 @@ const AddEducation = ({ addEducation, history }) => {
                 onChange={(e) => onChange(e)}
               />
             </div>
-            <input type='submit' className='btn btn-success mg-1' />
             <Link className='btn btn-light mg-1' to='/dashboard'>
-              Go Back
+              <i class='fas fa-arrow-left'></i> Go Back
             </Link>
+            <input type='submit' className='btn btn-success mg-1' />
           </form>
         </div>
       </section>
