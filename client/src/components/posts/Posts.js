@@ -16,11 +16,13 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
   ) : (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-light'>Posts</h1>
-        <p className='lead'>
+        <h1 className='xx-large text-theme component-center'>Posts</h1>
+        <p className='lead ff-Work-Sans'>
           <i className='fas fa-user-circle' /> Welcome to the community
         </p>
         <PostForm />
+        <div class='line' />
+
         <div className='posts'>
           {posts.map((post) => (
             <PostItem key={post._id} post={post} />

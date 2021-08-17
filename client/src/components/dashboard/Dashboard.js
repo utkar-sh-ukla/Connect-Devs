@@ -7,6 +7,7 @@ import DashboardActions from './DashboardActions'
 import Experience from './Experience'
 import Education from './Education'
 import { getCurrentProfile, deleteAccount } from '../../actions/profile'
+import welcome from '../../img/welcome.svg'
 
 const Dashboard = ({
   getCurrentProfile,
@@ -22,10 +23,10 @@ const Dashboard = ({
     <Spinner />
   ) : (
     <Fragment>
-      <section className='container'>
-        <h1 className='large text-light'>Dashboard</h1>
-        <p className='lead'>
-          <i className='fas fa-user-circle' /> Welcome {user && user.name}
+      <section className='dashboard_container'>
+        <h1 className='xx-large text-theme mg-1'>Dashboard</h1>
+        <p className='lead ff-Work-Sans'>
+          <img src={welcome} className='welcome' /> Welcome {user && user.name}
         </p>
         {profile !== null ? (
           <Fragment>
@@ -33,21 +34,26 @@ const Dashboard = ({
             <Experience experience={profile.experience} />
             <Education education={profile.education} />
 
-            <div className='my-2'>
+            <div className='mg-2'>
               <button
                 className='btn btn-danger'
                 onClick={() => deleteAccount()}
               >
-                <i className='fas fa-user-minus' /> Delete My Account
+                <i class='far fa-trash-alt' /> Delete My Account
               </button>
             </div>
           </Fragment>
         ) : (
           <Fragment>
-            <p>You have not yet setup a profile, please add some info</p>
-            <Link to='/create-profile' className='btn btn-primary my-1'>
-              Create Profile
-            </Link>
+            <div className='no_dashboard_container'>
+              <i class='fas fa-user-circle fa-8x pd-bottom-30'></i>
+              <p className='pd-bottom-30'>
+                You have not yet setup a profile, please add some info
+              </p>
+              <Link to='/create-profile' className='button'>
+                Create Profile
+              </Link>
+            </div>
           </Fragment>
         )}
       </section>

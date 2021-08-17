@@ -72,7 +72,7 @@ export const deletePost = (id) => async (dispatch) => {
       payload: id,
     })
 
-    dispatch(setAlert('Post Removed', 'success'))
+    dispatch(setAlert('Post Removed', 'danger'))
   } catch (err) {
     dispatch({
       type: POST_ERROR,
@@ -160,7 +160,7 @@ export const deleteComment = (postId, commentId) => async (dispatch) => {
       payload: commentId,
     })
 
-    dispatch(setAlert('Comment Removed', 'success'))
+    dispatch(setAlert('Comment Removed', 'danger'))
   } catch (err) {
     dispatch({
       type: POST_ERROR,

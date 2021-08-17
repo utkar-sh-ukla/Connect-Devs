@@ -34,63 +34,63 @@ const Register = ({ setAlert, register, isAuthenticated }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-light text-center'>Sign Up</h1>
+        <h1 className='xx-large text-theme text-center'>Sign Up</h1>
         <div className='formbg'>
-          <p className='lead text-center pd-top-30'>
+          <p className='lead ff-Work-Sans text-center pd-top-30'>
             <i className='fas fa-user' /> Create Your Account
           </p>
           <form className='form' onSubmit={(e) => onSubmit(e)}>
             <div className='form-group'>
               <input
-                type='text'
+                type='stext'
                 placeholder='Name'
                 name='name'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={name}
                 onChange={(e) => onChange(e)}
               />
             </div>
             <div className='form-group'>
               <input
-                type='email'
+                type='semail'
                 placeholder='Email Address'
                 name='email'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={email}
                 onChange={(e) => onChange(e)}
               />
-              <small className='form-text mg-left-40'>
+              <small className='form-text component-center mg-auth'>
                 This site uses Gravatar so if you want a profile image, use a
                 Gravatar email
               </small>
             </div>
             <div className='form-group'>
               <input
-                type='password'
+                type='spassword'
                 placeholder='Password'
                 name='password'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={password}
                 onChange={(e) => onChange(e)}
               />
             </div>
             <div className='form-group'>
               <input
-                type='password'
+                type='spassword'
                 placeholder='Confirm Password'
                 name='password2'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={password2}
                 onChange={(e) => onChange(e)}
               />
             </div>
             <input
               type='submit'
-              className='btn btn-primary mg-left-35 width'
+              className='button component-center mg-auth width'
               value='Register'
             />
           </form>
-          <p className='my-1 mg-left-100 pd-bottom-30'>
+          <p className='mg-auth text-center pd-bottom-30'>
             Already have an account? <Link to='/login'>Sign In</Link>
           </p>
         </div>

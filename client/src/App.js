@@ -15,13 +15,12 @@ import Profiles from './components/profiles/Profiles'
 import Posts from './components/posts/Posts'
 import Post from './components/post/Post'
 import PrivateRoute from './components/routing/PrivateRoute'
+
 // Redux
 import { Provider } from 'react-redux'
 import store from './store'
 import { loadUser } from './actions/auth'
 import setAuthToken from './utils/setAuthToken'
-
-import example from './components/layout/LottieAnimation'
 import './App.css'
 
 if (localStorage.token) {
@@ -38,8 +37,7 @@ const App = () => {
       <Router>
         <Fragment>
           <Navbar />
-          <Route exact path='/' component={example} />
-          {/* <section className='container'> */}
+          <Route exact path='/' component={Landing} />
           <Alert />
           <Switch>
             <Route exact path='/register' component={Register} />
@@ -66,7 +64,6 @@ const App = () => {
             <PrivateRoute exact path='/posts' component={Posts} />
             <PrivateRoute exact path='/posts/:id' component={Post} />
           </Switch>
-          {/* </section> */}
         </Fragment>
       </Router>
     </Provider>

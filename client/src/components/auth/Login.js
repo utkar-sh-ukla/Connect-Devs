@@ -27,18 +27,18 @@ const Login = ({ login, isAuthenticated }) => {
   return (
     <Fragment>
       <section className='container'>
-        <h1 className='large text-light text-center'>Sign In</h1>
+        <h1 className='xx-large text-theme text-center'>Sign In</h1>
         <div className='formbg'>
-          <p className='lead text-center pd-top-30'>
+          <p className='lead text-center pd-top-30 ff-Work-Sans'>
             <i className='fas fa-user' /> Sign Into Your Account
           </p>
           <form className='form' onSubmit={(e) => onSubmit(e)}>
             <div className='form-group'>
               <input
-                type='email'
+                type='semail'
                 placeholder='Email Address'
                 name='email'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={email}
                 onChange={(e) => onChange(e)}
                 required
@@ -46,10 +46,10 @@ const Login = ({ login, isAuthenticated }) => {
             </div>
             <div className='form-group'>
               <input
-                type='password'
+                type='spassword'
                 placeholder='Password'
                 name='password'
-                className='mg-left-35'
+                className='component-center mg-auth'
                 value={password}
                 onChange={(e) => onChange(e)}
                 minLength='6'
@@ -57,11 +57,11 @@ const Login = ({ login, isAuthenticated }) => {
             </div>
             <input
               type='submit'
-              className='btn btn-primary mg-left-35 width'
+              className='button component-center mg-auth width'
               value='Login'
             />
           </form>
-          <p className='my-1 mg-left-100 pd-bottom-30'>
+          <p className='mg-1 text-center pd-bottom-30'>
             Don't have an account? <Link to='/register'>Sign Up</Link>
           </p>
         </div>

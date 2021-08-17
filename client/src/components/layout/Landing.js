@@ -1,40 +1,32 @@
 import React from 'react'
-import { Link, Redirect } from 'react-router-dom'
-import { connect } from 'react-redux'
-import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
+import LottieAnimation from './Lottie'
+import home from '../../Animation/developerAnimation.json'
 
-const Landing = ({ isAuthenticated }) => {
-  if (isAuthenticated) {
-    return <Redirect to='/dashboard' />
-  }
-
+const Example = () => {
   return (
-    <div className='landing'>
-      <div className='dark-overlay landing-inner'>
+    <section className='flex-container'>
+      <div className='flex-items'>
         <div className='land'>
-          <h1 className='x-large text-focus-in'>Connect with Developers</h1>
-          <p className='lead'>
+          <h1 className='x-large text-focus-in ff-Work-Sans'>
+            Connect with Developers
+          </h1>
+          <p className='lead ff-Work-Sans'>
             Create a developer profile/portfolio, share posts and get help from
             other developers
           </p>
           <div className='buttons'>
-            <Link to='/register' className='btn btn-primary'>
-              Sign Up
-            </Link>
-            <Link to='/login' className='btn btn-light'>
-              Login
+            <Link to='/login' className='btn theme-color'>
+              Get Started <i class='fas fa-arrow-right'></i>
             </Link>
           </div>
         </div>
       </div>
-    </div>
+      <div class='flex-items'>
+        <LottieAnimation lotti={home} height={650} width={640} />
+      </div>
+    </section>
   )
 }
 
-Landing.propTypes = {
-  isAuthenticated: PropTypes.bool,
-}
-const mapStateToProps = (state) => ({
-  isAuthenticated: state.auth.isAuthenticated,
-})
-export default connect(mapStateToProps)(Landing)
+export default Example
