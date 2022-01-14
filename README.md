@@ -1,4 +1,4 @@
-# Connect Devs
+# Connect Devs<img src='https://bettercodehub.com/edge/badge/Utkarsh-Shukla-Github/Connect-Devs?branch=master'>
 
 A social media/ community platform for developers to share their knowledge and get help from other developers..
 
