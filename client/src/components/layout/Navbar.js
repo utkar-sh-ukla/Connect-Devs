@@ -59,7 +59,7 @@ const Navbar = ({ auth: { isAuthenticated, loading }, logout }) => {
     <nav className='navbar '>
       <h1 className='large'>
         <Link to='/' style={{ color: '#111439', textAlign: 'center' }}>
-          <img src={logo} className='logo' />
+          <img src={logo} className='logo' alt='logo'/>
           onnect Devs
         </Link>
       </h1>

@@ -26,7 +26,7 @@ const Dashboard = ({
       <section className='dashboard_container'>
         <h1 className='xx-large text-theme mg-1'>Dashboard</h1>
         <p className='lead ff-Work-Sans'>
-          <img src={welcome} className='welcome' /> Welcome {user && user.name}
+          <img src={welcome} className='welcome' alt='welcome'/> Welcome {user && user.name}
         </p>
         {profile !== null ? (
           <Fragment>

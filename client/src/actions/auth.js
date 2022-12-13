@@ -38,7 +38,7 @@ export const register =
   async (dispatch) => {
     const config = {
       headers: {
-        'Content-Type': 'application/json',
+        'Content-Type': 'application/json; charset=UTF-8',
       },
     };
 
@@ -70,7 +70,7 @@ export const register =
 export const login = (email, password) => async (dispatch) => {
   const config = {
     headers: {
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json; charset=UTF-8',
     },
   };
 
