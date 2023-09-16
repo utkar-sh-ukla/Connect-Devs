@@ -32,7 +32,8 @@
     "redux": "^4.1.0",
     "redux-devtools-extension": "^2.13.9",
     "redux-thunk": "^2.3.0",
-    "request": "^2.88.2"
+    "request": "^2.88.2",
+    "styled-components": "^6.0.8"
   },
   "devDependencies": {
     "concurrently": "^6.2.0",

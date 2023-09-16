@@ -101,10 +101,10 @@ img {
 
 /* Fonts */
 .ff-Work-Sans {
-  font-family: 'Work Sans', sans-serif;
+  font-family: "Work Sans", sans-serif;
 }
 .ff-Playfair-Display {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
 }
 
 /* Text Styles*/
@@ -309,10 +309,10 @@ img {
   margin-top: 0.3rem;
   color: var(--dark-color);
 }
-.form input[type='stext'],
-.form input[type='semail'],
-.form input[type='spassword'],
-.form input[type='sdate'],
+.form input[type="stext"],
+.form input[type="semail"],
+.form input[type="spassword"],
+.form input[type="sdate"],
 .form select,
 .form textarea {
   display: block;
@@ -322,10 +322,10 @@ img {
   border: 1px solid var(--light-gray-color);
   border-radius: 5px;
 }
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
+.form input[type="text"],
+.form input[type="email"],
+.form input[type="password"],
+.form input[type="date"],
 .form select,
 .form textarea {
   display: block;
@@ -335,7 +335,7 @@ img {
   border: 2px solid #050a30;
   border-radius: 5px;
 }
-.form input[type='submit'],
+.form input[type="submit"],
 button {
   font: inherit;
 }
@@ -406,10 +406,10 @@ button {
 .profile-grid {
   display: grid;
   grid-template-areas:
-    'top top'
-    'about about'
-    'exp edu'
-    'github github';
+    "top top"
+    "about about"
+    "exp edu"
+    "github github";
   grid-gap: 1rem;
 }
 .profile-top {
@@ -566,11 +566,11 @@ button {
   }
   .profile-grid {
     grid-template-areas:
-      'top'
-      'about'
-      'exp'
-      'edu'
-      'github';
+      "top"
+      "about"
+      "exp"
+      "edu"
+      "github";
   }
   .profile-about .skills {
     flex-direction: column;
